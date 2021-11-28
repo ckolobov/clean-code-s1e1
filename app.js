@@ -30,17 +30,22 @@ const createNewTaskElement = (taskString) => {
   const deleteButtonImg = document.createElement('img');// delete button image
 
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = 'label task';
 
   // Each elements, needs appending
+  listItem.className = 'task-list__item';
+
+  checkBox.className = 'input';
   checkBox.type = 'checkbox';
+
+  editInput.className = 'input task';
   editInput.type = 'text';
-  editInput.className = 'task';
 
   editButton.innerText = 'Edit'; // innerText encodes special characters, HTML does not.
-  editButton.className = 'edit';
+  editButton.className = 'btn edit';
 
-  deleteButton.className = 'delete';
+  deleteButton.className = 'btn delete';
+  deleteButtonImg.className = 'img';
   deleteButtonImg.src = './remove.svg';
   deleteButton.appendChild(deleteButtonImg);
 

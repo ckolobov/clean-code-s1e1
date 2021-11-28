@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.eisenhower-matrix .img {
+.eisenhower-matrix__img {
   width: 100%;
 }
 
-.eisenhower-matrix .more-inf {
+.eisenhower-matrix__link {
   font-family: fantasy, cursive;
 }
 
@@ -78,7 +78,7 @@ button{
 
 /* Heading */
 .heading,
-.label[for="new-task"] {
+.add-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -106,12 +106,12 @@ button{
 }
 
 /* New Task */
-.label[for="new-task"] {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.input#new-task {
+.add-task__input {
   width: 318px;
 }
 
@@ -129,47 +129,47 @@ button{
   vertical-align: middle;
 }
 
-.task-list__item > .input[type="checkbox"] {
+.list-item__checkbox {
   margin: 0 10px;
 }
 
-.task-list__item > .label {
+.list-item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-list__item > .input[type="text"] {
+.list-item__text {
   width: 226px;
 }
 
-.btn.delete .img {
+.btn-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn.delete .img:hover {
+.btn-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list#completed-tasks .label {
+.completed-tasks .list-item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list .task-list__item .input[type=text] {
+.list-item__text {
   display: none;
 }
 
-.task-list .task-list__item.edit-mode .input[type=text] {
+.task-list__item--editable .list-item__text {
   display: inline-block;
   width: 224px;
 }
 
-.task-list .task-list__item.edit-mode .label {
+.task-list__item--editable .list-item__label {
   display: none;
 }
